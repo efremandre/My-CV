@@ -43,7 +43,7 @@
 						<!-- PHOTO -->
 						<div class="left-aside__photo photo section-general">
 							<div class="photo__block">
-								<img class="photo__img" src="assets/image/photo.jpg" alt="Photo" width="300">
+								<img class="photo__img" src="assets/image/photo.jpeg" alt="Photo" width="300">
 							</div>
 							<!-- FOR ADAPTIVE -->
 							<section class="right-aside__name right-aside__name_hiden name">
@@ -100,10 +100,10 @@
 								<h2 class="languages__title subtitle">Languages</h2>
 								<ul class="languages__list">
 									<li class="languages__item">
-										<span class="accent-text">Russian</span> &ndash; nativ
+										<span class="accent-text">Russian</span> – nativ
 									</li>
 									<li class="languages__item">
-										<span class="accent-text">English</span> &ndash; A1 (in the process of studying)
+										<span class="accent-text">English</span> – A1 (in the process of studying)
 									</li>
 								</ul>
 							</section>
@@ -147,12 +147,10 @@
 							<h3 class="my-project__title subtitle">My Project</h3>
 							<div class="my-project__row">
 								<ul class="my-project__list">
-									<li class="my-project__item"><a href="https://efremandre.github.io/" target="_blank"
-											class="my-project__link"><img src="assets/image/project1.jpg" alt="Project 1"
-												class="my-project__preview" width="300"></a></li>
-									<li class="my-project__item"><a href="https://efremandre.github.io/freebusinestheme/" target="_blank"
-											class="my-project__link"><img src="assets/image/project2.jpg" alt="Project 2"
-												class="my-project__preview" width="300"></a></li>
+									<li class="my-project__item"><a href="" target="_blank" class="my-project__link"><img src=""
+												alt="Project 1" class="my-project__preview" width="300"></a></li>
+									<li class="my-project__item"><a href="" target="_blank" class="my-project__link"><img src=""
+												alt="Project 2" class="my-project__preview" width="300"></a></li>
 								</ul>
 							</div>
 						</section>
@@ -162,19 +160,19 @@
 							<h3 class="code__title subtitle">Code example</h3>
 							<pre class="code__items">
 
-	function towelSort(matrix) {
-		const newArr = [];
-		const result = [];
+	<span class="code__red">function</span> towelSort(matrix) {
+		<span class="code__red">const</span> newArr <span class="code__blue">=</span> [];
+		<span class="code__red">const</span> result <span class="code__blue">=</span> [];
 	
-		if (arguments.length === 0 || matrix.length === 0) {
-			return result;
-		} else {
-			matrix.forEach((elem, index) => {
-		(index % 2 === 0) ? newArr.push(elem) : newArr.push(elem.reverse());
+		<span class="code__red">if</span> (arguments.<span class="code__blue">length === 0</span> || matrix.<span class="code__blue">length === 0</span>) {
+			<span class="code__red">return</span> result;
+		} <span class="code__red">else</span> {
+			matrix.forEach((elem, index) <span class="code__blue">=></span> {
+		(index % 2 <span class="code__blue">===</span> 0) ? newArr.push(elem) : newArr.push(elem.reverse());
 		});
 	}
 	
-		return result.concat(...newArr);
+	<span class="code__red">return</span> result.concat(...newArr);
 	}	
 								
 							</pre>
@@ -184,7 +182,14 @@
 			</div>
 		</main>
 		<footer class="footer">
-
+			<div class="container">
+				<ul class="footer__list">
+					<li class="footer__item">2022 Andrey Efremov</li>
+					<li class="footer__item">
+						<a href="https://github.com/efremandre" target="_blank" class="footer__link hover__link">My Github</a>
+					</li>
+				</ul>
+			</div>
 		</footer>
 	</div>
 	<script src="js/main.js"></script>

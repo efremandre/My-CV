@@ -760,6 +760,10 @@ body {
 	border-top: 1px solid var(--accent);
 }
 
+.footer__link {
+	color: var(--light-text);
+}
+
 @media (max-width: 415px) {
 	.footer__list {
 		flex-direction: column;
@@ -773,7 +777,7 @@ body {
 	}
 
 	.footer__link {
-		display: inline-block;
+		display: block;
 		padding: 20px;
 	}
 }
