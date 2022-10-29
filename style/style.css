@@ -648,6 +648,10 @@ body {
 	font-weight: 500;
 }
 
+.education__item-link {
+	text-decoration: underline;
+}
+
 .skills__item:last-child {
 	margin-bottom: 0;
 }
