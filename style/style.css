@@ -718,15 +718,13 @@ body {
 }
 
 .my-project__link {
-	font-size: 16px;
-	font-weight: 500;
-	margin-bottom: 5px;
+	text-decoration: underline;
 	color: #000;
+	transition: .5s;
 }
 
-.my-project__link:hover.subtitle::before {
-	opacity: 0;
-	transition: .5s;
+.my-project__link:hover {
+	text-decoration: none;
 }
 
 .my-project__description {
