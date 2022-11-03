@@ -1,5 +1,6 @@
 :root {
-	--accent: #ffd739;
+	--accent: #4ca75d;
+	/*ffd739 3da14f*/
 	--dark-color: #232325;
 	--light-color: #ffffff;
 
@@ -84,7 +85,7 @@ body {
 .subtitle {
 	position: relative;
 	display: inline-block;
-	margin-bottom: 20px;
+	margin-bottom: 26px;
 	font-size: 20px;
 	line-height: 38px;
 	font-weight: 700;
@@ -418,6 +419,7 @@ body {
 	background-color: var(--accent);
 	border-top: 1px solid #fff;
 	border-bottom: 1px solid #fff;
+	opacity: .8;
 }
 
 @media (max-width: 800px) {
@@ -614,15 +616,15 @@ body {
 	}
 }
 
-.about-me__text {
+.about-me__text,
+.my-project__description {
 	padding: 0 0 0 10px;
 	margin-bottom: 10px;
 	font-size: 18px;
-	line-height: 24px;
-	text-indent: 25px;
 }
 
-.about-me__text:last-child {
+.about-me__text:last-child,
+.my-project__description:last-child {
 	margin-bottom: 0;
 }
 
@@ -642,9 +644,13 @@ body {
 }
 
 .skills__item {
-	position: relative;
-	padding: 0 0 0 12px;
-	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.skills_description {
+	line-height: 26px;
 	font-weight: 500;
 }
 
@@ -654,12 +660,6 @@ body {
 
 .skills__item:last-child {
 	margin-bottom: 0;
-}
-
-@media (max-width: 500px) {
-	.skills__item::after {
-		display: none;
-	}
 }
 
 /*MY PROJECT*/
@@ -689,6 +689,7 @@ body {
 }
 
 .my-project__item {
+	flex: 1 0 50%;
 	padding: 0 10px;
 }
 
@@ -698,10 +699,11 @@ body {
 	}
 }
 
-.my-project__link {
+.my-project__demo-link {
 	display: block;
 	max-width: 300px;
 	height: 300px;
+	margin-bottom: 15px;
 	overflow: hidden;
 	border: 3px solid var(--accent);
 	transition: all 0.3s ease;
@@ -711,8 +713,25 @@ body {
 	width: 100%;
 }
 
-.my-project__link:hover {
+.my-project__demo-link:hover {
 	transform: scale(1.1);
+}
+
+.my-project__link {
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 5px;
+	color: #000;
+}
+
+.my-project__link:hover.subtitle::before {
+	opacity: 0;
+	transition: .5s;
+}
+
+.my-project__description {
+	padding: 0;
+	font-size: 16px;
 }
 
 /*CODE*/
